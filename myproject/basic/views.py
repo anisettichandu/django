@@ -13,7 +13,7 @@ def fun1(requests):
         return HttpResponse(f"you choose the option 1 \n so addition is {c}", content_type="text/plane")
     elif int(choice)==2:
         c=int(a)-int(b)
-        return HttpResponse(f"you choose the option 2 \n so subtraction is {c}")
+        return HttpResponse(f"you choose the option 2 \n so subtraction is {c}",content_type="text/plane")
     else:
         return HttpResponse(f"enter the valid choice")
         
