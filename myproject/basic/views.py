@@ -10,7 +10,7 @@ def fun1(requests):
     b=requests.GET.get("b",'0')
     if int(choice)==1:
         c =int(a)+int(b)
-        return HttpResponse(f"you choose the option 1 \n so addition is {c}")
+        return HttpResponse(f"you choose the option 1 \n so addition is {c}", content_type="text/plane")
     elif int(choice)==2:
         c=int(a)-int(b)
         return HttpResponse(f"you choose the option 2 \n so subtraction is {c}")
