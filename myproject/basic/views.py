@@ -5,7 +5,7 @@ from django.http import HttpResponse
 def fun(requests):
     return HttpResponse("hello chandu")
 def fun1(requests):
-    choice=requests.Get.get("choice",'')
+    choice=requests.GET.get("choice",'')
     a=requests.GET.get("a",'0')
     b=requests.GET.get("b",'0')
     if int(choice)==1:
