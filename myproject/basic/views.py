@@ -17,7 +17,7 @@ def fun1(requests):
             return HttpResponse(f"you choose the option 2 \n so subtraction is {c}",content_type="text/plane")
     elif int(choice==3):
             c=int(a)*int(b)
-            return HttpResponse(f"you choose the option 3 \n so mulitiplace is {c}",content_type="text/plane")
+            return HttpResponse(f"you choose the option 3 \n so mulitiplacation  {c}",content_type="text/plane")
     else:
             return HttpResponse(f"enter the valid choice")
         
