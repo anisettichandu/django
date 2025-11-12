@@ -95,18 +95,7 @@ def addStudent(request):
 #     if request.method == 'GET':
 #         student = list(Students.objects.all().count())
 #         return JsonResponse(student, safe=False)
-     
-
-        
-        
-        
-        
-         
-        
-        
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    # return JsonResponse({"status": "error"}, status=400)
+#  # return JsonResponse({"status": "error"}, status=400)
 
     # return JsonResponse({"error": "Use POST method"}, status=405)
         
-    
-# Create your views here.
