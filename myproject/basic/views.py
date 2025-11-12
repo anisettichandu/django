@@ -96,7 +96,7 @@ def addStudent(request):
 #         student = list(Students.objects.all().count())
 #         return JsonResponse(student, safe=False)
      
-         
+
         
         
         
@@ -104,7 +104,7 @@ def addStudent(request):
          
         
         
-    # return JsonResponse({"status": "error"}, status=400)
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    # return JsonResponse({"status": "error"}, status=400)
 
     # return JsonResponse({"error": "Use POST method"}, status=405)
         

@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-at+l^(@1mb7wz*sk%n-(l@0myjp)w0^jzh=5b5!xleft)p@pcn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-ggow.onrender.com']
+ALLOWED_HOSTS = ['django-ggow.onrender.com','127.0.0.1', 'localhost']
+
 
 
 # Application definition
@@ -76,10 +77,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'coders',      # replace with your DB name
+        'USER': 'root',                    # your MySQL username
+        'PASSWORD': '123456',    # your MySQL password
+        'HOST': 'localhost',               # or '127.0.0.1'
+        'PORT': '3306',                    # default MySQL port
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        },
     }
 }
+
+
 
 
 # Password validation
